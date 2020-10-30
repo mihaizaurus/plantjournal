@@ -15,24 +15,14 @@ nav {
   font-size: 3vh;
 }
 
-nav a.navbar-brand {
+nav a.navbar-item {
   float: left;
   background-color: #171f14;
   color: #d9ffcc;
   text-align: center;
-  padding: 10px 16px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-}
-
-nav a.nav-item {
-  float: left;
-  background-color: #171f14;
-  color: #d9ffcc;
-  text-align: center;
-  padding: 10px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 nav a:hover {
@@ -40,9 +30,9 @@ nav a:hover {
   background-color: #171f14;
   color: #d9ffcc;
   text-align: center;
-  padding: 10px 16px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
   text-shadow: 1px 1px 1px #208000;
 }
 
@@ -51,42 +41,49 @@ nav a:active {
   background-color: #171f14;
   color: #d9ffcc;
   text-align: center;
-  padding: 10px 16px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 
-nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+nav div.dropdown {
+  float: left;
   overflow: hidden;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  vertical-align: middle;
-  height: 6vh;
-  font-size: 3vh;
 }
 
-nav div.navbar-nav, nav div.dropdown-menu {
-  float: left;
-  background-color: #171f14;
-  color: #d9ffcc;
-  text-align: center;
-  padding: 10px 16px;
-  text-decoration: none;
-  font-size: 17px;
+nav div.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-nav div a.nav-link {
-  float: left;
+nav div.dropdown .dropdown-button {
+  font-size: 16px;
+  border: none;
+  outline: none;
   background-color: #171f14;
   color: #d9ffcc;
-  text-align: center;
-  padding: 10px 16px;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+nav div.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+nav div.dropdown-content a {
+  float: none;
+  background-color: #171f14;
+  color: #d9ffcc;
+  padding: 12px 16px;
   text-decoration: none;
-  font-size: 17px;
+  display: block;
+  text-align: left;
+}
+
+nav div.dropdown-content a:hover {
+  background-color: #d9ffcc;
 }
 
 body {
@@ -94,9 +91,5 @@ body {
   background-color: #c7d6c2;
   padding: 0;
   margin: 0;
-}
-
-button {
-  font-family: "Caveat", cursive;
 }
 /*# sourceMappingURL=app.css.map */
