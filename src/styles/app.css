@@ -15,11 +15,76 @@ nav {
   font-size: 3vh;
 }
 
-nav a .navbar-brand {
+nav a.navbar-brand {
   float: left;
-  color: #0d3300;
+  background-color: #171f14;
+  color: #d9ffcc;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a.nav-item {
+  float: left;
+  background-color: #171f14;
+  color: #d9ffcc;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  float: left;
+  background-color: #171f14;
+  color: #d9ffcc;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-shadow: 1px 1px 1px #208000;
+}
+
+nav a:active {
+  float: left;
+  background-color: #171f14;
+  color: #d9ffcc;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  vertical-align: middle;
+  height: 6vh;
+  font-size: 3vh;
+}
+
+nav div.navbar-nav, nav div.dropdown-menu {
+  float: left;
+  background-color: #171f14;
+  color: #d9ffcc;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav div a.nav-link {
+  float: left;
+  background-color: #171f14;
+  color: #d9ffcc;
+  text-align: center;
+  padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
 }
