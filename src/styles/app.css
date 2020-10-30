@@ -11,8 +11,8 @@ nav {
       -ms-flex-align: baseline;
           align-items: baseline;
   vertical-align: middle;
-  height: 6vh;
-  font-size: 3vh;
+  height: 4vh;
+  font-size: 2vh;
 }
 
 nav a.navbar-item {
