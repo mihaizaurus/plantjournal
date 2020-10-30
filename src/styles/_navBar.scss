@@ -1,0 +1,23 @@
+@import "./variables";
+@import "./baseline";
+
+nav {
+  @include darkText();
+  display: flex;
+  overflow: hidden;
+  align-items: baseline;
+  vertical-align: middle;
+  height: 6vh;
+  font-size: 3vh;
+
+  a {
+    .navbar-brand {
+      float: left;
+      color: $primaryText-light;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  }
+}

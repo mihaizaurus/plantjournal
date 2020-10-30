@@ -1,0 +1,37 @@
+/*=== General Theme Colors ===*/
+/*=== General Theme Colors ===*/
+nav {
+  background-color: #171f14;
+  color: #d9ffcc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  vertical-align: middle;
+  height: 6vh;
+  font-size: 3vh;
+}
+
+nav a .navbar-brand {
+  float: left;
+  color: #0d3300;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+body {
+  font-family: "Domine", serif;
+  background-color: #c7d6c2;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: "Caveat", cursive;
+}
+/*# sourceMappingURL=app.css.map */

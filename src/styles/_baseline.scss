@@ -1,0 +1,14 @@
+@mixin lightText() {
+  background-color: $primaryBackground-light;
+  color: $primaryText-light;
+}
+
+@mixin darkText() {
+  background-color: $primaryBackground-dark;
+  color: $primaryText-mid-dark;
+}
+
+@mixin midText() {
+  background-color: $primaryBackground-mid;
+  color: $primaryText-mid-dark;
+}
