@@ -1,8 +1,10 @@
 import React, { Component, useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
-import sampleData from "../exampleData";
+import { useSelector } from "react-redux";
 
 function PlantDisplay({ match }) {
+  const plantCollection = useSelector((state) => state.plantCollection);
+
   useEffect(() => {
     fetchPlantInfo();
   }, []);
@@ -10,13 +12,12 @@ function PlantDisplay({ match }) {
   const [plant, setPlant] = useState({});
 
   const fetchPlantInfo = () => {
-    const plant = sampleData.collection.find((myPlant) => {
+    const plant = plantCollection.plants.find((myPlant) => {
       return myPlant.id === match.params.id;
     });
     setPlant(plant);
-    // console.log(plant);
   };
-  if (plant.type !== undefined) {
+  if (plant.type) {
     return (
       <div className="flex-shrink-0" style={{ paddingTop: "150px" }}>
         <h1>
